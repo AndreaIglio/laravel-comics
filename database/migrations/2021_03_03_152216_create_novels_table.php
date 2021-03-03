@@ -16,7 +16,9 @@ class CreateNovelsTable extends Migration
         Schema::create('novels', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->text('body');
             $table->float('price');
+            $table->boolean('available');
             $table->timestamp('on_sale_date')->nullable();
             $table->string('volume');
             $table->string('trim_size')->nullable();

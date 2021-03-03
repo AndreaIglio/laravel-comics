@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Artist;
 class ArtistSeeder extends Seeder
 {
     /**
@@ -11,6 +11,16 @@ class ArtistSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $artists_list = config('seeder.artists');
+
+        foreach ($artists_list as $artist) {
+            
+
+            $newArtist = new Artist();
+            $newArtist->name = $artist['name'];
+            $newArtist->lastname = $artist['lastname'];
+
+            $newArtist->save();
+        }
     }
 }
