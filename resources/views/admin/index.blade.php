@@ -1,8 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li><a href="#"><i class="fas fa-film"></i> Movies</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
