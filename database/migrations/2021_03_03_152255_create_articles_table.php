@@ -22,6 +22,7 @@ class CreateArticlesTable extends Migration
             $table->string('trim_size')->nullable();
             $table->integer('pages');
             $table->string('rated')->nullable();
+            $table->string('cover')->nullable();
             $table->timestamps();
         });
     }
