@@ -23,6 +23,7 @@ Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->
 
 
     Route::get('/', 'AdminController@index');
+    Route::resource('novels', 'NovelController');
 
 
 });

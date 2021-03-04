@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Novel;
+use App\Serie;
 use Illuminate\Http\Request;
 
 class NovelController extends Controller
@@ -14,7 +16,8 @@ class NovelController extends Controller
      */
     public function index()
     {
-        //
+        $novels = Novel::all();
+        return view('admin.novels.index', compact('novels'));
     }
 
     /**
@@ -46,7 +49,7 @@ class NovelController extends Controller
      */
     public function show(Novel $novel)
     {
-        //
+        return view('admin.novels.show', compact('novel'));
     }
 
     /**
@@ -57,7 +60,9 @@ class NovelController extends Controller
      */
     public function edit(Novel $novel)
     {
-        //
+        $series = Serie::all();
+        // dd($series);
+        return view('admin.novels.edit',compact('novel','series'));
     }
 
     /**

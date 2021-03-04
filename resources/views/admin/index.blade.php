@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-4">
             <ul class="list-unstyled">
-                <li><a href="#"><i class="fas fa-book-reader"></i> Novels</a></li>
+                <li><a href="{{ route('admin.novels.index') }}"><i class="fas fa-book-reader"></i> Novels</a></li>
                 <li><a href="#"><i class="fas fa-film"></i> Articles</a></li>
                 <li><a href="#"><i class="fas fa-paint-brush"></i> Artists</a></li>
                 <li><a href="#"><i class="fas fa-pencil-alt"></i> Writers</a></li>

@@ -10944,3 +10944,11 @@ a.text-dark:focus {
   }
 }
 
+.column {
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
