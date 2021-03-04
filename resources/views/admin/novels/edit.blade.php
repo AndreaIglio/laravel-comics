@@ -31,8 +31,12 @@
                 <input id="price" class="form-control" type="number" step="0.01" min="0" max="100" name="price" value="{{$novel->price}}">
                 <br>
 
+                <label for="cover">Cover Image</label>
+                <img src="{{asset($novel->cover)}}" style="width:200px" alt="">
+
+
             </div>
-            <img src="{{$novel->cover}}" alt="">
+            <!-- <img src="{{asset('storage/img/footer/footer-bg.jpg')}}" alt=""> -->
         </div>
     </div>
 </div>

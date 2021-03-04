@@ -17,6 +17,7 @@
                         <th>Available</th>
                         <th>Pages</th>
                         <th>Rated</th>
+                        <th>Cover</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -29,6 +30,9 @@
                         <td>{{ $novel->available }}</td>
                         <td>{{ $novel->pages }}</td>
                         <td>{{ $novel->rated }}</td>
+                        <td>
+                            <img src="{{asset($novel->cover)}}" style="width:200px" alt="">
+                        </td>
                         <td>
                             <a href="{{route('admin.novels.show', $novel->id)}}" class="btn btn-primary"><i class="fas fa-eye fa-xs fa-fw"></i></a>
 
