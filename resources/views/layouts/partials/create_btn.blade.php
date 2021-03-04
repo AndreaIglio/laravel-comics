@@ -1,0 +1,1 @@
+<button class="create_btn" title="Create"><a href="{{route( 'admin.novels.create')}}"><i class="fas fa-plus"></i></a></button>

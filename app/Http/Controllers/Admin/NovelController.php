@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Novel;
+use Illuminate\Support\Facades\Storage;
 use App\Serie;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+
 
 class NovelController extends Controller
 {
@@ -27,7 +30,8 @@ class NovelController extends Controller
      */
     public function create()
     {
-        //
+        $series = Serie::all();
+        return view('admin.novels.create', compact('series'));
     }
 
     /**
@@ -38,7 +42,25 @@ class NovelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'body' => 'required',
+            'price' => 'required',
+            'available' => 'required',
+            'serie_id' => 'nullable',
+            'on_sale_date' => 'nullable',
+            'volume' => 'required',
+            'trim_size' => 'required',
+            'pages' => 'required',
+            'cover' => ' nullable ',
+        ]);
+
+        $cover = Storage::put('header_home', $request->cover);
+
+        $validatedData['cover'] = $cover;
+        // ->save($validatedData);
+
+        return redirect()->route('admin.novels.index');
     }
 
     /**
@@ -74,7 +96,33 @@ class NovelController extends Controller
      */
     public function update(Request $request, Novel $novel)
     {
-        //
+
+        Storage::delete('header_home', $novel->cover);
+    
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'body' => 'required',
+            'price' => 'required',
+            'available' => 'required',
+            'serie_id' => 'required',
+            'on_sale_date' => 'nullable',
+            'volume' => 'required',
+            'trim_size'=>'required',
+            'pages'=>'required',
+            'cover'=> 'nullable',
+            'rated' => 'required'
+        ]);
+            
+
+        $cover = Storage::put('header_home', $request->cover);
+        $validatedData['cover'] = $cover;
+        $novel->update($validatedData);
+
+        return redirect()->route('admin.novels.index');
+
+
+
+
     }
 
     /**

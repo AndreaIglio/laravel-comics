@@ -1,0 +1,13 @@
+.sidebar {
+
+    width: 100%;
+
+    ul {
+        width: 100%;
+        list-style: none;    
+        justify-content: space-around;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+        background-color: white;
+        padding: 20px;
+    }
+}

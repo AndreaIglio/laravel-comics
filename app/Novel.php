@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Novel extends Model
 {
+
+    protected $fillable = ['name', 'body', 'available', 'price','on_sale_date','volume','trim_size','pages','cover', 'serie_id','rated'];
+
     public function artists()
     {
 
