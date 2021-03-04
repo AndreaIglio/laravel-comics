@@ -32,6 +32,8 @@
                         <td>{{ $novel->rated }}</td>
                         <td>
                             <img src="{{asset($novel->cover)}}" style="width:200px" alt="">
+                            <img src="{{ asset('storage/' . $novel->cover) }}" alt="">
+
                         </td>
                         <td>
                             <a href="{{route('admin.novels.show', $novel->id)}}" class="btn btn-primary"><i class="fas fa-eye fa-xs fa-fw"></i></a>

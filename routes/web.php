@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'Guests\PageController@homepage');
 
 
+
 Auth::routes();
 
 

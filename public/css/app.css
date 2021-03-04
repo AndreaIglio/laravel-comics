@@ -10952,6 +10952,11 @@ a.text-dark:focus {
   display: flex;
 }
 
+.wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .create_btn {
   position: fixed;
   bottom: 50px;
@@ -10991,6 +10996,8 @@ a.text-dark:focus {
 
 .admin_structure {
   align-items: center;
-  margin-top: 50px;
+  padding-top: 100px;
+  width: 90%;
+  margin: auto;
 }
 
