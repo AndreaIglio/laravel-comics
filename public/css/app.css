@@ -10963,6 +10963,11 @@ a.text-dark:focus {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  text-transform: uppercase;
+}
+
 .create_btn {
   position: fixed;
   bottom: 50px;
@@ -11099,5 +11104,56 @@ a.text-dark:focus {
 
 .navbar_bottom .navbar-container .right img {
   position: absolute;
+}
+
+.jumbo {
+  width: 100%;
+}
+
+.jumbo .jumbo-white {
+  height: 50px;
+  background-color: white;
+}
+
+.jumbo .jumbo-black {
+  width: 100%;
+  background-color: #212121;
+  align-items: center;
+}
+
+.jumbo .jumbo-black .jumbo-top {
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.jumbo .jumbo-black .jumbo-top .left {
+  color: white;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  background-color: #0282F9;
+}
+
+.jumbo .jumbo-black .jumbo-top .left h2 {
+  margin: 0;
+}
+
+.jumbo .jumbo-black .jumbo-top .right {
+  text-align: right;
+  width: 50%;
+}
+
+.jumbo .jumbo-black .jumbo-top ul {
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+}
+
+.jumbo .jumbo-black .jumbo-top ul li {
+  display: inline;
+  padding: 0px 10px;
 }
 

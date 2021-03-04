@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    < class="wrapper">
         @yield('navbar-top')
 
         @yield('navbar-bottom')
@@ -36,15 +36,11 @@
         @yield('jumbotron')
 
 
-
-        <div class="container">
-            @yield('content')
+        @yield('content')
 
 
+        @yield('footer')
 
-
-            @yield('footer')
-        </div>
     </div>
 </body>
 

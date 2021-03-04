@@ -1,0 +1,45 @@
+.jumbo {
+   width: 100%;
+   .jumbo-white {
+       height: 50px;
+       background-color: white;
+   }
+    .jumbo-black{
+        width: 100%;
+        background-color: $bg_dark;
+        align-items: center;
+        .jumbo-top{
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            .left {
+                color: white;
+                width: 30%;
+                justify-content: center;
+                align-items: center;
+                background-color: $dc_color;
+                h2 {
+                    margin: 0;
+                }
+                
+            }
+            .right {
+                text-align: right;
+                width: 50%;
+            }
+            ul {
+                width: 100%;
+                align-items: center;
+                list-style: none;
+                justify-content: center;
+                margin: 0;
+                li {
+                    display: inline;
+                    padding: 0px 10px;
+                }
+               
+            }
+            
+    }
+}
+}
