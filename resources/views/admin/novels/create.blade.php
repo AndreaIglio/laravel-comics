@@ -60,8 +60,8 @@
                 <input type="number" class="form-control" name="pages" value="">
                 <br>
 
-                <label for="pages" name="on_sale_date">On Sale</label>
-                <input type="date" class="form-contro" name="on_sale_date" value="">
+                <label for="on_sale" name="on_sale_date">On Sale</label>
+                <input type="date" class="form-control" name="on_sale_date" value="">
                 <br>
 
                 <label for="available">Available</label>

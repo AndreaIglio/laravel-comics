@@ -65,8 +65,8 @@
 
                 <label for="available">Available</label>
                 <select name="available" id="">
-                    <option name="available">1</option>
-                    <option value="" name="available">0</option>
+                    <option value="1" name="available">1</option>
+                    <option value="0" name="available">0</option>
 
                 </select>
 
