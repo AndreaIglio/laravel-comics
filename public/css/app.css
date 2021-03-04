@@ -11025,7 +11025,7 @@ a.text-dark:focus {
 
 .navbar-top ul li {
   display: inline;
-  padding: 15px 50px;
+  padding: 15px 40px;
   width: 200px;
   height: 50px;
   border-right: 1px solid white;
@@ -11049,5 +11049,55 @@ a.text-dark:focus {
 .navbar-top .right {
   width: 70%;
   align-items: center;
+}
+
+.navbar_bottom {
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.navbar_bottom a {
+  color: black;
+}
+
+.navbar_bottom ul {
+  width: 100%;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+}
+
+.navbar_bottom ul li {
+  display: inline;
+  padding: 0px 30px;
+}
+
+.navbar_bottom .navbar-container {
+  margin: auto;
+  width: 80%;
+}
+
+.navbar_bottom .navbar-container div {
+  align-items: center;
+}
+
+.navbar_bottom .navbar-container .left {
+  width: 15%;
+  justify-content: flex-start;
+}
+
+.navbar_bottom .navbar-container .center {
+  width: 70%;
+  justify-content: center;
+}
+
+.navbar_bottom .navbar-container .right {
+  width: 15%;
+  justify-content: flex-end;
+}
+
+.navbar_bottom .navbar-container .right img {
+  position: absolute;
 }
 
