@@ -13,7 +13,7 @@
 </div><br />
 @endif
 <div class="admin_structure flex column">
-    <div class="col-md-10">
+    <div class="col-md-8">
         <h1>Edit Novel</h1>
         <form action="{{route('admin.novels.update', $novel->id)}}" method="post" enctype="multipart/form-data">
             <div class="form-group flex column">

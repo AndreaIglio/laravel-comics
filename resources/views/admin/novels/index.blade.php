@@ -52,7 +52,7 @@
 
                     <a href="{{route('admin.novels.edit', $novel->id)}}" class="btn btn-warning"><i class="fas fa-pencil-ruler fa-xs fa-fw"></i></a>
 
-                    <form action="" method="post">
+                    <form action="{{route('admin.novels.destroy', $novel->id)}}" method="post">
                         @METHOD('DELETE')
                         @csrf
                         <button class="btn btn-danger" type="submit"><i class="fas fa-trash fa-xs fa-fw"></i></button>

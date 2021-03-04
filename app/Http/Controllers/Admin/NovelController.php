@@ -40,7 +40,7 @@ class NovelController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Novel $novel)
     {
         $validatedData = $request->validate([
             'name' => 'required',
@@ -52,13 +52,15 @@ class NovelController extends Controller
             'volume' => 'required',
             'trim_size' => 'required',
             'pages' => 'required',
-            'cover' => ' nullable ',
+            'cover' => 'nullable',
         ]);
 
         $cover = Storage::put('header_home', $request->cover);
 
         $validatedData['cover'] = $cover;
-        // ->save($validatedData);
+        $novel = Novel::create($validatedData);
+
+        $novel->save();
 
         return redirect()->route('admin.novels.index');
     }
@@ -133,6 +135,10 @@ class NovelController extends Controller
      */
     public function destroy(Novel $novel)
     {
-        //
+        
+        $novel->delete();
+
+        return redirect()->route('admin.novels.index');
+
     }
 }
