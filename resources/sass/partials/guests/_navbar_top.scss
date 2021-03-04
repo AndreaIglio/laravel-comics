@@ -1,0 +1,46 @@
+.navbar-top {
+
+    width: 100%;
+    background-color: $dc_color;
+    a {
+        
+    }
+    img {
+        background-color: white;
+    }
+    ul {
+        width: 100%;
+        justify-content: flex-end;
+        list-style: none;
+        
+        margin: 0;
+        li {
+            display: inline;
+            padding: 15px 50px;
+            width: 200px;
+            height: 50px;
+            border-right: 1px solid white;
+            position: relative;
+            border-left: 1px solid white;
+            img {
+                background-color:$dc_color;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            
+        }
+    }
+    .left {
+        width: 30%;
+    }
+    .right{
+        width: 70%;
+        align-items: center;
+        
+    }
+
+}

@@ -10957,6 +10957,12 @@ a.text-dark:focus {
   overflow-x: hidden;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .create_btn {
   position: fixed;
   bottom: 50px;
@@ -10999,5 +11005,49 @@ a.text-dark:focus {
   padding-top: 100px;
   width: 90%;
   margin: auto;
+}
+
+.navbar-top {
+  width: 100%;
+  background-color: #0282F9;
+}
+
+.navbar-top img {
+  background-color: white;
+}
+
+.navbar-top ul {
+  width: 100%;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar-top ul li {
+  display: inline;
+  padding: 15px 50px;
+  width: 200px;
+  height: 50px;
+  border-right: 1px solid white;
+  position: relative;
+  border-left: 1px solid white;
+}
+
+.navbar-top ul li img {
+  background-color: #0282F9;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar-top .left {
+  width: 30%;
+}
+
+.navbar-top .right {
+  width: 70%;
+  align-items: center;
 }
 
