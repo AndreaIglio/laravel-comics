@@ -1,5 +1,8 @@
 
 .must-read-title {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
     width: 70%;
     margin: auto;
      h2 {
@@ -8,10 +11,11 @@
      }
 }
 .must-read {
-
+    
+    
     width: 70%;
     margin: auto;
-   
+    padding-bottom: 20px;
     .articles-card {
         width: 300px;
         overflow-x: hidden;

@@ -10993,6 +10993,10 @@ h5 {
   line-height: 2;
 }
 
+.active {
+  border-bottom: 5px solid #0282F9;
+}
+
 .create_btn {
   position: fixed;
   bottom: 50px;
@@ -11054,6 +11058,7 @@ h5 {
 }
 
 .navbar-top ul li {
+  transform: skew(-15deg);
   display: inline;
   padding: 15px 40px;
   width: 200px;
@@ -11083,7 +11088,6 @@ h5 {
 
 .navbar_bottom {
   width: 100%;
-  padding: 15px 0px;
 }
 
 .navbar_bottom a {
@@ -11098,9 +11102,15 @@ h5 {
   margin: 0;
 }
 
+.navbar_bottom ul a:hover {
+  text-decoration: none;
+  color: #0282F9;
+}
+
 .navbar_bottom ul li {
   display: inline;
-  padding: 0px 30px;
+  padding: 60px 20px;
+  margin: 0px 10px;
 }
 
 .navbar_bottom .navbar-container {
@@ -11213,6 +11223,9 @@ h5 {
 }
 
 .must-read-title {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
   width: 70%;
   margin: auto;
 }
@@ -11225,6 +11238,7 @@ h5 {
 .must-read {
   width: 70%;
   margin: auto;
+  padding-bottom: 20px;
 }
 
 .must-read .articles-card {
