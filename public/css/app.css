@@ -11157,3 +11157,21 @@ html {
   padding: 0px 10px;
 }
 
+.jumbo .novels-card {
+  background-color: #212121;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbo .novels-card h6 {
+  margin: 0;
+}
+
+.jumbo .novels-card .novels-name {
+  color: white;
+}
+
+.jumbo .novels-card .novels-available {
+  color: #0282F9;
+}
+

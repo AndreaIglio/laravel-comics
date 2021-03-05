@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    < class="wrapper">
+    <div class="wrapper">
         @yield('navbar-top')
 
         @yield('navbar-bottom')

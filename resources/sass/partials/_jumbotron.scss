@@ -42,4 +42,21 @@
             
     }
 }
+
+
+
+    .novels-card {
+        background-color: $bg_dark;
+        justify-content: center;
+        align-items: center;
+        h6 {
+            margin: 0;
+        }
+        .novels-name {
+            color: white;
+        }
+        .novels-available {
+            color: $dc_color;
+        }
+    }
 }
