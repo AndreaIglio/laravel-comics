@@ -10989,6 +10989,10 @@ html {
   box-shadow: inset 7px 10px 12px #f0f0f0;
 }
 
+h5 {
+  line-height: 2;
+}
+
 .create_btn {
   position: fixed;
   bottom: 50px;
@@ -11411,6 +11415,102 @@ footer .footer .footer-right img {
 }
 
 .novel-description {
-  width: 70%;
+  width: 60%;
+  margin: auto;
+}
+
+.novel-description div {
+  padding: 30px 0px;
+}
+
+.novel-description .novel_price {
+  color: white;
+  width: 500px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: #55BA59;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.novel-description .novel_price .available {
+  text-transform: uppercase;
+}
+
+.novel-description .novel_price h6 {
+  margin: 0;
+}
+
+.novel-description .novel_available_check {
+  width: 300px;
+  justify-content: center;
+  background-color: #55BA59;
+  padding: 15px 20px;
+  align-items: center;
+  color: white;
+  border-left: 1px solid gray;
+}
+
+.novel-description .novel_available_check h6 {
+  margin: 0;
+  line-height: 2;
+}
+
+.novel-description .novel_body {
+  text-transform: none;
+  width: 800px;
+}
+
+.novel-description .novel_body h6 {
+  line-height: 2;
+}
+
+.jumbo-novel {
+  height: 500px;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.jumbo-novel .blue {
+  width: 100%;
+  height: 50px;
+  background-color: #0282F9;
+  position: absolute;
+  top: 90%;
+}
+
+.jumbo-novel .novel-cover {
+  position: absolute;
+  bottom: 20px;
+  left: 25%;
+  z-index: 99;
+  border: 1px solid white;
+}
+
+.novel-specs {
+  width: 100%;
+  margin: auto;
+  text-transform: none;
+  background-color: #F6F6F6;
+  padding: 40px 0px;
+}
+
+.novel-specs .talent-specs {
+  width: 60%;
+  margin: auto;
+}
+
+.novel-specs .talent-specs div {
+  width: 600px;
+}
+
+.novel-specs .talent-specs ul {
+  margin: 0;
+  list-style: none;
+}
+
+.novel-specs .talent-specs .specs {
+  margin-left: 30px;
 }
 

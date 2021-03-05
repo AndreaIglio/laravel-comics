@@ -25,8 +25,12 @@ Comics | DC
 
 @section('content')
 
+@include('guests.partials.novel_jumbotron')
 
 @include('guests.partials.novel_description')
+
+@include('guests.partials.novel_specs')
+
 
 
 @include('guests.partials.info')
@@ -39,6 +43,7 @@ Comics | DC
 @include('guests.partials.footer')
 
 @include('guests.partials.sign_up')
+
 
 
 @endsection

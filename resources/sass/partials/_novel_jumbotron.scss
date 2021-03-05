@@ -1,0 +1,21 @@
+.jumbo-novel {
+
+
+   height: 500px;
+   background-attachment: fixed;
+   position: relative;
+   .blue {
+       width: 100%;
+       height: 50px;
+       background-color: $dc_color;
+       position: absolute;
+       top: 90%;
+   }
+   .novel-cover {
+       position: absolute;
+       bottom: 20px;
+       left: 25%;
+       z-index: 99;
+       border: 1px solid white;
+   }
+}

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Novel;
 use App\Article;
+use App\Artist;
 use App\Serie;
 
 class GuestController extends Controller
@@ -47,11 +48,13 @@ class GuestController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Novel $novel, $id)
+    public function show(Novel $novel, $id, Serie $serie)
     {
         $novel = Novel::find($id);
+        $series = Serie::all();
+        $artists = Artist::all();
         // dd($novel);
-        return view('guests.show', compact('novel'));
+        return view('guests.show', compact('novel','artists','series'));
     }
 
     /**

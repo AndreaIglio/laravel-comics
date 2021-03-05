@@ -1,0 +1,27 @@
+.novel-specs {
+    width: 100%;
+    margin: auto;
+    text-transform: none;
+    background-color: $bg_lightgrey;
+    padding: 40px 0px;
+    
+    .talent-specs{
+        width: 60%;
+        margin: auto;
+        
+        div {
+            width: 600px;
+           
+        }
+         ul {
+             margin: 0;
+             list-style: none;
+             
+         }
+         .specs {
+             margin-left: 30px;
+         }
+    }
+    
+   
+}
