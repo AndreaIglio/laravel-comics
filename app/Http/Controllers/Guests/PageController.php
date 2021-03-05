@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Novel;
 use App\Articles;
+use App\Serie;
 
 class PageController extends Controller
 {
@@ -14,7 +15,8 @@ class PageController extends Controller
 
         $novels = Novel::all();
         $articles = Article::all();
-        return view('guests.homepage', compact('novels','articles'));
+        $series = Serie::all();
+        return view('guests.homepage', compact('novels','articles','series'));
 
 
     }

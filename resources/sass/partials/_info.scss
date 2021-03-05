@@ -1,0 +1,21 @@
+.info {
+    width: 100%;
+    margin: auto;
+    background-color: $dc_color;
+    .buy-bar {
+        width: 70%;
+        justify-content: space-around;
+        margin: auto;
+
+        .buy-bar-card {
+            align-items: center;
+
+            p {
+                color: white;
+                margin: 0;
+            }
+        }
+
+    }
+    
+}

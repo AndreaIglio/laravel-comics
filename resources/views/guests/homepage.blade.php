@@ -30,4 +30,9 @@ Comics | DC
 
 @include('guests.partials.must_read')
 
+@include('guests.partials.current_series')
+
+@include('guests.partials.info')
+
+
 @endsection

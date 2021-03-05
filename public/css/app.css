@@ -11227,3 +11227,52 @@ html {
   color: #0282F9;
 }
 
+.content-bottom {
+  width: 100%;
+  background-color: #212121;
+  color: white;
+}
+
+.content-bottom .current-series {
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+  justify-content: space-around;
+}
+
+.content-bottom .current-series img {
+  width: 180px;
+}
+
+.content-bottom .current-series .serie {
+  width: 180px;
+  margin: 0px 10px;
+}
+
+.content-bottom .current-series .serie p {
+  margin: 20px 0px;
+  font-size: 12px;
+}
+
+.info {
+  width: 100%;
+  margin: auto;
+  background-color: #0282F9;
+}
+
+.info .buy-bar {
+  width: 70%;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.info .buy-bar .buy-bar-card {
+  align-items: center;
+}
+
+.info .buy-bar .buy-bar-card p {
+  color: white;
+  margin: 0;
+}
+

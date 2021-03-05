@@ -1,0 +1,27 @@
+.content-bottom {
+    width: 100%;
+    background-color: $bg_dark;
+    color: white;
+    .current-series {
+        width: 70%;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 40px 0px;
+        justify-content: space-around;
+
+        
+        
+        img {
+            width: 180px;
+        }
+        .serie {
+            width: 180px;
+            margin: 0px 10px;
+            // justify-content: space-around;
+            p{
+                margin: 20px 0px;
+                font-size: 12px;
+            }
+        }
+    }
+}
