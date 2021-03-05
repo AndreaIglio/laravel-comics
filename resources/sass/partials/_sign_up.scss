@@ -1,0 +1,50 @@
+.footer-bottom{
+ z-index: 99;
+ width: 100%;
+ background-color: $bg_lightdark;
+ padding: 30px 0px;
+ text-transform: uppercase;
+ a {
+     color: $dc_color;
+     text-decoration: none;
+     font-size: 20px;
+ }
+
+ a:hover {
+     text-decoration: none;
+     font-size: 24px;
+ }
+
+    .sign-up {
+        z-index: 99;
+        width: 70%;
+        margin: auto;
+        justify-content: space-around;
+        .left {
+            .btn {
+                background-color: transparent;
+                border: 2px solid $dc_color;
+                padding: 10px 10px;
+                color: white;
+                border-radius: 0%;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+        }
+        
+        .right {
+            align-items: center;
+           
+            ul {
+                align-items: center;
+                list-style: none;
+                margin: 0;
+                li {
+                    padding: 0px 15px;
+                }
+            }
+        }
+    }
+
+
+}

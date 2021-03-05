@@ -36,3 +36,12 @@ Comics | DC
 
 
 @endsection
+
+@section('footer')
+
+@include('guests.partials.footer')
+
+@include('guests.partials.sign_up')
+
+
+@endsection
