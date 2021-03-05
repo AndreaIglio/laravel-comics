@@ -73,6 +73,7 @@ class NovelController extends Controller
      */
     public function show(Novel $novel)
     {
+        
         return view('admin.novels.show', compact('novel'));
     }
 

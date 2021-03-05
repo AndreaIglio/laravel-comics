@@ -12,6 +12,14 @@
             justify-content: space-between;
             align-items: center;
             width: 80%;
+            a {
+                text-decoration: none;
+                color: $footer_a;
+                font-weight: bold;
+            }
+            a:hover {
+                color: $dc_color;
+            }
             .left {
                 color: white;
                 padding: 15px 30px;

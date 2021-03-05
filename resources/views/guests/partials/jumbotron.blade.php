@@ -24,16 +24,18 @@
             @foreach($novels as $novel)
 
             <div class="novels-card flex column">
-                <img src="{{ asset($novel->cover) }}" alt="">
-                <img src="{{ asset('storage/' . $novel->cover) }}" alt="">
+                <a href="{{route ('comics.show', $novel->id )}}">
+                    <img src="{{ asset($novel->cover) }}" alt="">
+                    <img src="{{ asset('storage/' . $novel->cover) }}" alt="">
+                </a>
                 <h6 class="novels-name">{{$novel->name}} #{{$novel->volume}}</h6>
-                
-                    @if($novel->available == 1)
-                    <h6 class="novels-available">Available Now</h6>
-                    @else
-                    <h6 class="novels-available">Not Available</h6>
-                    @endif
-                
+
+                @if($novel->available == 1)
+                <h6 class="novels-available">Available Now</h6>
+                @else
+                <h6 class="novels-available">Not Available</h6>
+                @endif
+
 
             </div>
 

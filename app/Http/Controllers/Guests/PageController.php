@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Guests;
 
-use App\Article;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Novel;
-use App\Articles;
+use App\Article;
 use App\Serie;
 
 class PageController extends Controller
@@ -20,4 +20,5 @@ class PageController extends Controller
 
 
     }
+
 }

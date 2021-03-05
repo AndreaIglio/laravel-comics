@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Guests\PageController@homepage');
 
-
+Route::resource('comics', 'Guests\GuestController');
 
 Auth::routes();
 

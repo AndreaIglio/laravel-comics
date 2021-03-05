@@ -11148,6 +11148,16 @@ html {
   width: 80%;
 }
 
+.jumbo .jumbo-black .jumbo-top a {
+  text-decoration: none;
+  color: #959595;
+  font-weight: bold;
+}
+
+.jumbo .jumbo-black .jumbo-top a:hover {
+  color: #0282F9;
+}
+
 .jumbo .jumbo-black .jumbo-top .left {
   color: white;
   padding: 15px 30px;
@@ -11259,7 +11269,7 @@ html {
   width: 100%;
   margin: auto;
   background-color: #0282F9;
-  padding: 50px 0px;
+  padding: 40px 0px;
 }
 
 .info .buy-bar {
@@ -11398,5 +11408,9 @@ footer .footer .footer-right img {
 
 .footer-bottom .sign-up .right ul li {
   padding: 0px 15px;
+}
+
+.novel-description {
+  width: 70%;
 }
 
