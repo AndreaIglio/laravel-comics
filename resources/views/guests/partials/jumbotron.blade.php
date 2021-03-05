@@ -9,7 +9,7 @@
         <div class="jumbo-top flex">
             <div class="left flex">
 
-                <h2>COMICS & GRAPHIC NOVELS</h2>
+                <h3>COMICS & GRAPHIC NOVELS</h3>
 
             </div>
             <ul class="right">

@@ -1,0 +1,29 @@
+
+.must-read-title {
+    width: 70%;
+    margin: auto;
+     h2 {
+         color: $dc_color;
+         margin: 0;
+     }
+}
+.must-read {
+
+    width: 70%;
+    margin: auto;
+   
+    .articles-card {
+        width: 300px;
+        overflow-x: hidden;
+        padding: 0px 10px;
+    
+        img {
+            width: 300px;
+        }
+        .articles-sub_title {
+            color: $dc_color;
+        }
+    }
+
+
+}

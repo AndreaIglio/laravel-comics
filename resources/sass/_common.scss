@@ -18,4 +18,25 @@
 html {
     scroll-behavior: smooth;
     text-transform: uppercase;
+    overflow-x: hidden;
 }
+
+    ::-webkit-scrollbar {
+        width: 13px;
+        height: 13px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(13deg, #ffffff 16%, #0282f9 64%);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(13deg, #ffffff 14%, #0282f9 64%);
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: inset 7px 10px 12px #f0f0f0;
+    }

@@ -14,11 +14,13 @@
             width: 80%;
             .left {
                 color: white;
-                width: 30%;
+                padding: 15px 30px;
                 justify-content: center;
                 align-items: center;
                 background-color: $dc_color;
-                h2 {
+                position: relative;
+                bottom: 30px;
+                h3 {
                     margin: 0;
                 }
                 
@@ -48,7 +50,7 @@
     .novels-card {
         background-color: $bg_dark;
         justify-content: center;
-        align-items: center;
+        padding: 0px 5px;
         h6 {
             margin: 0;
         }

@@ -10966,6 +10966,27 @@ a.text-dark:focus {
 html {
   scroll-behavior: smooth;
   text-transform: uppercase;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(13deg, #ffffff 16%, #0282f9 64%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(13deg, #ffffff 14%, #0282f9 64%);
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
 }
 
 .create_btn {
@@ -11129,13 +11150,15 @@ html {
 
 .jumbo .jumbo-black .jumbo-top .left {
   color: white;
-  width: 30%;
+  padding: 15px 30px;
   justify-content: center;
   align-items: center;
   background-color: #0282F9;
+  position: relative;
+  bottom: 30px;
 }
 
-.jumbo .jumbo-black .jumbo-top .left h2 {
+.jumbo .jumbo-black .jumbo-top .left h3 {
   margin: 0;
 }
 
@@ -11160,7 +11183,7 @@ html {
 .jumbo .novels-card {
   background-color: #212121;
   justify-content: center;
-  align-items: center;
+  padding: 0px 5px;
 }
 
 .jumbo .novels-card h6 {
@@ -11172,6 +11195,35 @@ html {
 }
 
 .jumbo .novels-card .novels-available {
+  color: #0282F9;
+}
+
+.must-read-title {
+  width: 70%;
+  margin: auto;
+}
+
+.must-read-title h2 {
+  color: #0282F9;
+  margin: 0;
+}
+
+.must-read {
+  width: 70%;
+  margin: auto;
+}
+
+.must-read .articles-card {
+  width: 300px;
+  overflow-x: hidden;
+  padding: 0px 10px;
+}
+
+.must-read .articles-card img {
+  width: 300px;
+}
+
+.must-read .articles-card .articles-sub_title {
   color: #0282F9;
 }
 
