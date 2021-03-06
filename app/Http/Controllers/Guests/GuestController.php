@@ -8,6 +8,7 @@ use App\Novel;
 use App\Article;
 use App\Artist;
 use App\Serie;
+use App\Writer;
 
 class GuestController extends Controller
 {
@@ -53,8 +54,14 @@ class GuestController extends Controller
         $novel = Novel::find($id);
         $series = Serie::all();
         $artists = Artist::all();
-        // dd($novel);
-        return view('guests.show', compact('novel','artists','series'));
+        $writers = Writer::all();
+        $novel_artists = Novel::with('artists')->get();
+        $novel_writers = Novel::with('writers')->get();
+        
+        // dd($novel_writers);
+
+
+        return view('guests.show', compact('novel','artists','series','writers','novel_artists','novel_writers'));
     }
 
     /**

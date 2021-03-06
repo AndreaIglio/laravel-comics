@@ -10,13 +10,27 @@
                 <tbody>
                     <tr>
                         <td scope="row">Art By:</td>
-                        <td>{{$novel->artist_id}}</td>
-                        <td></td>
+
+                        <td class="artist">
+                            @foreach($novel_artists as $novel_artist)
+                            @foreach($novel_artist->artists as $artist)
+                            {{$artist->name}}
+                            {{$artist->lastname}},
+                            @endforeach
+                            @endforeach
+                        </td>
                     </tr>
                     <tr>
                         <td scope="row">Written By:</td>
-                        <td>{{$novel->writer_id}}</td>
-                        <td></td>
+                        <td class="writer">
+                        @foreach($novel_writers as $novel_writer)
+                        @foreach($novel_writer->writers as $writer)
+                        {{$writer->name}}
+                        {{$writer->lastname}}
+
+                        @endforeach
+                        @endforeach
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -30,14 +44,17 @@
                 <tbody>
                     <tr>
                         <td scope="row">Series:</td>
-                        <td>
-                        
-                        {{$novel->serie_id}}</td>
-                        <td></td>
+                        <td class="serie_name">
+                            @foreach($series as $serie)
+                            @if($serie->id == $novel->serie_id)
+                            {{$serie->title}}
+                            @endif
+                            @endforeach
+                        </td>
                     </tr>
                     <tr>
                         <td scope="row">U.S.Price:</td>
-                        <td>$ {{$novel->price}}</td>
+                        <td>{{$novel->price}}</td>
                         <td></td>
                     </tr>
                     <tr>

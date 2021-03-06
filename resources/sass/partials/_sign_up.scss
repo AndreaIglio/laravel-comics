@@ -1,6 +1,7 @@
 .footer-bottom{
  z-index: 99;
  width: 100%;
+ position: relative;
  background-color: $bg_lightdark;
  padding: 30px 0px;
  text-transform: uppercase;
@@ -16,7 +17,6 @@
  }
 
     .sign-up {
-        z-index: 99;
         width: 70%;
         margin: auto;
         justify-content: space-around;
@@ -34,6 +34,8 @@
         
         .right {
             align-items: center;
+         position: relative;
+
            
             ul {
                 align-items: center;

@@ -49,7 +49,7 @@
             </div>
 
             <div class="footer-copyright">
-                <p>All site Content TM and 2020 DC Entertainment, unless otherwise <span>noted here</span> . All rights reserved <span>Cookies Settings</span></p>
+                <p>All site Content TM and &copy; 2020 DC Entertainment, unless otherwise <span>noted here</span> . All rights reserved <span>Cookies Settings</span></p>
             </div>
 
 

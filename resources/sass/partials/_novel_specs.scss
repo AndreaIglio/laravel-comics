@@ -18,8 +18,21 @@
              list-style: none;
              
          }
+
+         .talent{
+             .artist,.writer {
+                 color: $dc_color;
+                 font-weight: bold;
+             }
+         }
+
          .specs {
              margin-left: 30px;
+             .serie_name {
+                 text-transform: uppercase;
+                 color: $dc_color;
+                 font-weight: bold;
+             }
          }
     }
     

@@ -11400,6 +11400,7 @@ footer .footer .footer-right img {
 .footer-bottom {
   z-index: 99;
   width: 100%;
+  position: relative;
   background-color: #262626;
   padding: 30px 0px;
   text-transform: uppercase;
@@ -11417,7 +11418,6 @@ footer .footer .footer-right img {
 }
 
 .footer-bottom .sign-up {
-  z-index: 99;
   width: 70%;
   margin: auto;
   justify-content: space-around;
@@ -11435,6 +11435,7 @@ footer .footer .footer-right img {
 
 .footer-bottom .sign-up .right {
   align-items: center;
+  position: relative;
 }
 
 .footer-bottom .sign-up .right ul {
@@ -11543,7 +11544,19 @@ footer .footer .footer-right img {
   list-style: none;
 }
 
+.novel-specs .talent-specs .talent .artist,
+.novel-specs .talent-specs .talent .writer {
+  color: #0282F9;
+  font-weight: bold;
+}
+
 .novel-specs .talent-specs .specs {
   margin-left: 30px;
+}
+
+.novel-specs .talent-specs .specs .serie_name {
+  text-transform: uppercase;
+  color: #0282F9;
+  font-weight: bold;
 }
 
