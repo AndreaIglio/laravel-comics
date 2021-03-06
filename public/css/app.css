@@ -10967,6 +10967,7 @@ html {
   scroll-behavior: smooth;
   text-transform: uppercase;
   overflow-x: hidden;
+  font-family: "Oswald", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -11135,10 +11136,23 @@ h5 {
 .navbar_bottom .navbar-container .right {
   width: 15%;
   justify-content: flex-end;
+  position: relative;
+}
+
+.navbar_bottom .navbar-container .right input {
+  border: none;
+  border-bottom: 2px solid #0282F9;
+  background-color: transparent;
+  text-align: end;
+  padding-right: 30px;
+  font-weight: bold;
+  width: 150px;
 }
 
 .navbar_bottom .navbar-container .right img {
   position: absolute;
+  bottom: 45%;
+  right: 5px;
 }
 
 .jumbo {
@@ -11210,8 +11224,13 @@ h5 {
   padding: 0px 5px;
 }
 
+.jumbo .novels-card a {
+  padding-bottom: 10px;
+}
+
 .jumbo .novels-card h6 {
   margin: 0;
+  padding: 10px 0px;
 }
 
 .jumbo .novels-card .novels-name {
