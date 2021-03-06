@@ -59,8 +59,12 @@
         background-color: $bg_dark;
         justify-content: center;
         padding: 0px 5px;
+        a{
+            padding-bottom: 10px;
+        }
         h6 {
             margin: 0;
+            padding: 10px 0px;
         }
         .novels-name {
             color: white;

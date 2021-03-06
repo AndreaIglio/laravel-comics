@@ -30,7 +30,9 @@
                 <tbody>
                     <tr>
                         <td scope="row">Series:</td>
-                        <td>{{$novel->serie_id}}</td>
+                        <td>
+                        
+                        {{$novel->serie_id}}</td>
                         <td></td>
                     </tr>
                     <tr>
