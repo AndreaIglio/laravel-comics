@@ -1,6 +1,8 @@
 .navbar_bottom {
     width: 100%;
 
+  
+
     a {
         color: black;
     }
@@ -43,8 +45,20 @@
         .right {
             width: 15%;
             justify-content: flex-end;
+            position: relative;
+
+              input {
+                  border: none;
+                  border-bottom: 2px solid $dc_color;
+                  background-color: transparent;
+                  text-align: end;
+                  padding-right: 30px;
+                  font-weight: bold;
+                  width: 150px;
+              }
             img {
                 position: absolute;
+                bottom: 45%;
                 
             }
         }
