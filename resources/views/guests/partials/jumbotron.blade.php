@@ -21,12 +21,12 @@
             </ul>
         </div>
         <div class="jumbo-bottom flex">
-            @foreach($novels as $novel)
 
+            @foreach($novels as $novel)
             <div class="novels-card flex column">
                 <a href="{{route ('comics.show', $novel->id )}}">
-                    <img src="{{ asset($novel->cover) }}" alt="">
-                    <img src="{{ asset('storage/' . $novel->cover) }}" alt="">
+                    <img src="{{ asset($novel->cover) }}" alt="" onerror="this.style.display='none'">
+                    <img src="{{ asset('storage/' . $novel->cover) }}" alt="" onerror="this.style.display='none'">
                 </a>
                 <h6 class="novels-name">{{$novel->name}} #{{$novel->volume}}</h6>
 
@@ -35,7 +35,6 @@
                 @else
                 <h6 class="novels-available">Not Available</h6>
                 @endif
-
 
             </div>
 
