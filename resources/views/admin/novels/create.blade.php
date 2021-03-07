@@ -44,7 +44,7 @@
                 <br>
 
 
-                <label for="cover">Select a file:</label>
+                <label for="cover">Select a cover:</label>
                 <input type="file" name="cover" id="cover" value="" required>
 
                 <label for="trim_size">Volume</label>
@@ -70,6 +70,14 @@
                     <option value="0" name="available">0</option>
                 </select>
 
+
+
+
+                <br>
+
+
+                <label for="jumbotron">Select a Jumbotron pic:</label>
+                <input type="file" name="jumbotron" id="jumbotron" value="jumbotron" required>
 
                 <br>
 

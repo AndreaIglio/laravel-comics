@@ -53,11 +53,17 @@ class NovelController extends Controller
             'trim_size' => 'required',
             'pages' => 'required',
             'cover' => 'nullable',
+            'jumbotron' => 'required',
         ]);
 
         $cover = Storage::put('header_home', $request->cover);
+        $jumbotron = Storage::put('jumbotron_show', $request->jumbotron);
+
 
         $validatedData['cover'] = $cover;
+        $validatedData['jumbotron'] = $jumbotron;
+
+
         $novel = Novel::create($validatedData);
 
         $novel->save();
@@ -118,7 +124,11 @@ class NovelController extends Controller
             
 
         $cover = Storage::put('header_home', $request->cover);
+        $jumbotron = Storage::put('jumbotron_show', $request->jumbotron);
+
         $validatedData['cover'] = $cover;
+        $validatedData['jumbotron'] = $jumbotron;
+
         $novel->update($validatedData);
 
         return redirect()->route('admin.novels.index');

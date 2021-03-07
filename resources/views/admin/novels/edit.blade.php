@@ -73,6 +73,12 @@
 
                 <br>
 
+
+                <label for="jumbotron">Select a Jumbotron pic:</label>
+                <input type="file" name="jumbotron" id="jumbotron" value="jumbotron" required>
+
+                <br>
+
                 <label for="rated">Rated</label>
                 <input type="text" name="rated" value="{{$novel->rated}}">
 

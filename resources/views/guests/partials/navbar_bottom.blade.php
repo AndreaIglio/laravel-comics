@@ -9,7 +9,7 @@
         <div class="center flex">
             <ul class="flex">
                 <li><a href="">CHARACTERS</a></li>
-                <li class="active"><a href="">COMICS</a></li>
+                <li class="active-navbar"><a href="">COMICS</a></li>
                 <li><a href="">MOVIES</a></li>
                 <li><a href="">TV</a></li>
                 <li><a href="">GAMES</a></li>

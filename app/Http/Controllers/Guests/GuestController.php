@@ -58,6 +58,7 @@ class GuestController extends Controller
         $novel_artists = Novel::with('artists')->get();
         $novel_writers = Novel::with('writers')->get();
         
+        // dd($novel);
         // dd($novel_writers);
 
 

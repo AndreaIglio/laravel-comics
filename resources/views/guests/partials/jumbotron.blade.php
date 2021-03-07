@@ -33,7 +33,7 @@
                 @if($novel->available == 1)
                 <h6 class="novels-available">Available Now</h6>
                 @else
-                <h6 class="novels-available">Out of Stock</h6>
+                <h6 class="novels-available">Not Available</h6>
                 @endif
 
 

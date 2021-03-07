@@ -10994,7 +10994,7 @@ h5 {
   line-height: 2;
 }
 
-.active {
+.active-navbar {
   border-bottom: 5px solid #0282F9;
 }
 
@@ -11216,6 +11216,16 @@ h5 {
 .jumbo .jumbo-black .jumbo-top ul li {
   display: inline;
   padding: 0px 10px;
+}
+
+.jumbo .jumbo-black .carousel-item {
+  height: 600px;
+  width: 1700px;
+}
+
+.jumbo .jumbo-bottom {
+  width: 100%;
+  justify-content: space-around;
 }
 
 .jumbo .novels-card {

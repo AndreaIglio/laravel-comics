@@ -13,22 +13,28 @@
 
                         <td class="artist">
                             @foreach($novel_artists as $novel_artist)
+                            @if($novel_artist->id == $novel->id)
                             @foreach($novel_artist->artists as $artist)
                             {{$artist->name}}
                             {{$artist->lastname}},
                             @endforeach
+                            @endif
                             @endforeach
                         </td>
                     </tr>
                     <tr>
+                        
                         <td scope="row">Written By:</td>
                         <td class="writer">
                         @foreach($novel_writers as $novel_writer)
+                        @if($novel_writer->id == $novel->id)
                         @foreach($novel_writer->writers as $writer)
+                        
                         {{$writer->name}}
                         {{$writer->lastname}}
 
                         @endforeach
+                        @endif
                         @endforeach
                         </td>
                     </tr>
