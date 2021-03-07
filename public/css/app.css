@@ -11218,14 +11218,9 @@ h5 {
   padding: 0px 10px;
 }
 
-.jumbo .jumbo-black .carousel-item {
-  height: 600px;
-  width: 1700px;
-}
-
 .jumbo .jumbo-bottom {
   width: 100%;
-  justify-content: space-around;
+  overflow: scroll;
 }
 
 .jumbo .novels-card {

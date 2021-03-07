@@ -39,8 +39,8 @@
 
                 <td>
                     @if($novel->cover)
-                    <img src="{{ asset('storage/' . $novel->cover) }}" width="200px" alt="">
-                    <img src="{{ asset($novel->cover) }}" width="200px" alt="">
+                    <img src="{{ asset('storage/' . $novel->cover) }}" width="200px" alt="" onerror="this.style.display='none'">
+                    <img src="{{ asset($novel->cover) }}" width="200px" alt="" onerror="this.style.display='none'">
                     @endif
                 </td>
 
