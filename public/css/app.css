@@ -11168,6 +11168,39 @@ h5 {
   width: 100%;
   background-color: #212121;
   align-items: center;
+  position: relative;
+}
+
+.jumbo .jumbo-black .scrollRight {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  height: 488px;
+  width: 50px;
+  right: 0px;
+  top: 50%;
+  transform: translate(0, -54%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbo .jumbo-black .scrollLeft {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  height: 488px;
+  width: 50px;
+  left: 0px;
+  top: 50%;
+  transform: translate(0, -54%);
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  font-size: 35px;
 }
 
 .jumbo .jumbo-black .jumbo-top {
@@ -11220,7 +11253,9 @@ h5 {
 
 .jumbo .jumbo-bottom {
   width: 100%;
-  overflow: scroll;
+  overflow-x: hidden;
+  position: relative;
+  height: 600px;
 }
 
 .jumbo .novels-card {
@@ -11244,6 +11279,12 @@ h5 {
 
 .jumbo .novels-card .novels-available {
   color: #0282F9;
+}
+
+.jumbo .novels-card:hover img {
+  transform: scale(1.05);
+  transition: 0.5s;
+  opacity: 0.8;
 }
 
 .must-read-title {
@@ -11327,6 +11368,7 @@ h5 {
 .info .buy-bar .buy-bar-card p {
   color: white;
   margin: 0;
+  padding-left: 10px;
 }
 
 footer {

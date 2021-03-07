@@ -20,8 +20,9 @@
                 <li><a href="">See all</a></li>
             </ul>
         </div>
-        <div class="jumbo-bottom flex">
+        <div class="jumbo-bottom flex" id="carousel">
 
+              
             @foreach($novels as $novel)
             <div class="novels-card flex column">
                 <a href="{{route ('comics.show', $novel->id )}}">
@@ -37,11 +38,15 @@
                 @endif
 
             </div>
-
-
-
             @endforeach
-        </div>
+            </div>
+
+            
+        
+
+        <a class="scrollLeft flex" id="slide_left"> < </a>
+        <a class="scrollRight flex" id="slide_right"> > </a>
+
 
     </div>
 
@@ -52,3 +57,6 @@
 
 
 </div>
+
+
+
